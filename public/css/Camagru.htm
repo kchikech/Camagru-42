@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://192.168.99.100/camagru/users/settings -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./Camagru_files/style.css">
+  <link rel="stylesheet" href="./Camagru_files/bulma.min.css">
+  <link rel="stylesheet" href="./Camagru_files/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"> 
+  <title>Camagru</title>
+</head>
+<body class="layout-default">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="http://192.168.99.100/camagru">
+        <span class="icon">
+          <i class="fas fa-home">&nbsp;&nbsp;</i>
+        </span>
+
+        Home
+      </a>
+      
+      <a class="navbar-item " href="http://192.168.99.100/camagru/users/profile/2">
+        <i class="fa fa-user" aria-hidden="true"></i> &nbsp;Profile
+      </a>
+
+      <div class="navbar-item">
+        <a class="navbar-item" href="http://192.168.99.100/camagru/users/settings">
+        <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;Settings
+        </a>
+      </div>
+          </div>
+
+    <div class="navbar-end">
+              <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-light" href="http://192.168.99.100/camagru/users/logout">
+              <strong>Logout</strong>
+            </a>
+          </div>
+        </div>
+          </div>
+  </div>
+</nav>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+</script>  <div class="container">
+<div class="container is-widescreen">
+    <div class="column is-half is-offset-one-fifth">
+
+    </div>
+    <div class="container is-fluid column is-half is-offset-one-fifth">
+        <h2 class="title">Edit you information here :</h2> <br>
+        <form action="http://192.168.99.100/camagru/users/settings" method="post">
+            <div class="field">
+                <label class="label" for="email">Email :</label>
+                <div class="control">
+                    <input name="email" class="input " type="email" placeholder="" value="kchikech.hamza@gmail.com">
+                </div>
+                <span class="help is-danger"></span>
+            </div>
+            <div class="field">
+                <label class="label" for="username">Username :</label>
+                <div class="control">
+                    <input name="username" class="input " type="text" placeholder="" value="kchikech1">
+                </div>
+                <span class="help is-danger"></span>
+            </div>
+            <div class="field">
+                <label class="label" for="fname">Full name :</label>
+                <div class="control">
+                    <input name="fname" class="input " type="text" placeholder="" value="Hamza Kchikech">
+                </div>
+                <span class="help is-danger"></span>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input name="notif" type="checkbox" value="yes" checked="">
+                    Recieve notifications 
+                </label>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <input name="token" class="input" type="hidden" placeholder="" value="fe5f5868cce111f4af102da61ca9ede75965e280512ae479f51dc8f685a3a76b">
+
+                    <button type="submit" class="button is-link" name="update" value="update">Update</button>
+                </div>
+            </div>
+        </form>
+        <form action="http://192.168.99.100/camagru/users/settings" method="post">
+
+            <br>
+            
+            <div>
+                <h2 class="title">Change password :</h2><h2>
+            </h2></div>
+            <br>
+            <div class="field">
+                <label class="label" for="old_password">Old password:</label>
+                <div class="control">
+                    <input name="old_password" class="input " type="password" placeholder="" value="">
+                </div>
+                <span class="help is-danger"></span>
+            </div>
+
+            <div class="field">
+                <label class="label" for="new_password">new password:</label>
+                <div class="control">
+                    <input name="new_password" class="input " type="password" placeholder="" value="">
+                </div>
+                <span class="help is-danger"></span>
+            </div>
+            <div class="field">
+                <label class="label" for="conf_new_password">Confirm new password:</label>
+                <div class="control">
+                    <input name="conf_new_password" class="input " type="password" placeholder="" value="">
+                </div>
+                <span class="help is-danger"></span>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <input name="token" class="input" type="hidden" placeholder="" value="fe5f5868cce111f4af102da61ca9ede75965e280512ae479f51dc8f685a3a76b">
+                    <button class="button is-link" type="submit" name="change" value="change">Change Password</button>
+                </div>
+            </div>
+
+        </form>
+
+
+
+        <br><br><br>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Camagru</strong> by <a href="http://192.168.99.100/camagru/users/settings">Hamza KCHIKECH</a>.
+        </p>
+    </div>
+    <script src="./Camagru_files/main.js"></script>
+
+</footer>
+
+</div></div></div></body></html>
